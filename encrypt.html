@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Encryption Mode - Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="mode-page">
+
+  <div class="container">
+    <header>
+      <h1>ENCRYPTION MODE</h1>
+    </header>
+
+    <div class="upload-section">
+      <label for="fileInput">Upload Plain Text File:</label>
+      <input type="file" id="fileInput" accept=".txt">
+      <div id="fileStatus">Please upload a plain text file for encryption.</div>
+    </div>
+
+    <div class="key-inputs">
+      <label>Direction (left/right):</label>
+      <input type="text" id="directionInput" placeholder="left or right">
+
+      <label>Shift Count:</label>
+      <input type="number" id="shiftInput" placeholder="e.g., 3">
+    </div>
+
+    <button class="action-btn" onclick="handleEncrypt()">Encrypt</button>
+
+    <div class="result-section">
+      <h2>Original Text:</h2>
+      <pre id="originalText"></pre>
+
+      <h2>Encrypted Text:</h2>
+      <pre id="processedText"></pre>
+
+      <div id="statusBox"></div>
+    </div>
+  </div>
+
+  <!-- Background image -->
+  <img src="Assets/encrypt.jpg" alt="Background" class="background-image">
+
+  <script src="script.js"></script>
+</body>
+</html>
